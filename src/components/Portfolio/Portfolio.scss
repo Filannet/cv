@@ -1,0 +1,93 @@
+.portfolioWrapper {
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.portfolioNavigation {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.portfolioNavigationItem {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #26C17E;
+
+  &:not(:first-child):before {
+    margin: 0 4px;
+    color: #26C17E;
+    content: '/';
+  }
+
+  &.-active, &:hover {
+    color: #000;
+  }
+}
+
+.portfolioCards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.portfolioCard {
+  width: 308px;
+  height: 190px;
+
+  &:hover {
+    .portfolioCardImage {
+      display: none;
+    }
+
+    .portfolioCardContent {
+      display: flex;
+    }
+  }
+}
+
+.portfolioCardImage {
+  width: 308px;
+  height: 190px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolioCardContent {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 15px 30px;
+  box-sizing: border-box;
+  border: 1px solid #DDD;
+  color: #26C17E;
+  background: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+
+  .portfolioTitle {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .portfolioDescription {
+    color: #222935;
+    line-height: 150%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .portfolioLink {
+    text-decoration-line: underline;
+    color: #26C17E;
+  }
+}

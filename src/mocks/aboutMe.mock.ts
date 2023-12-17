@@ -1,0 +1,1 @@
+export const aboutMe = 'I am very responsible, purposeful, enthusiastic and a good team player. I really enjoy learning and I am looking forward to putting my knowledge into practice on real projects and developing my skills.'

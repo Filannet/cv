@@ -1,0 +1,25 @@
+.panelWrapper {
+  display: grid;
+  grid-template-columns: 250px 30px;
+  position: fixed;
+  height: 100%;
+}
+
+.panelColumn {
+  padding-top: 20px;
+
+  &:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    background: #222935;
+  }
+}
+
+.goBackButton {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,37 @@
+.timeLineItem {
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-column-gap: 35px;
+}
+
+.timeLineDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeLineDateValue {
+  margin: 15px 0;
+}
+
+.timeLineVertical {
+  width: 5px;
+  height: 100%;
+  background-color: #26C17E;
+}
+
+.timeLineDesc {
+  position: relative;
+  padding-bottom: 10px;
+
+  &:before {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #eeeeee;
+    rotate: 45deg;
+    top: 20px;
+    left: -5px;
+    content: '';
+  }
+}

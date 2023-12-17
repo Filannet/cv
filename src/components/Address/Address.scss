@@ -1,0 +1,40 @@
+.contactsWrapper {
+  display: grid;
+  grid-row-gap: 20px;
+
+  .contactItem {
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-column-gap: 20px;
+    word-break: break-all;
+  }
+
+  .contactIcon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    align-self: center;
+
+    path {
+      fill: #26C17E;
+    }
+  }
+
+  .contactsText {
+    color: #222935;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    align-self: center;
+  }
+
+  .contactLink {
+    text-decoration: none;
+    color: #667081;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

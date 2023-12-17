@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  background:url("../../assets/background.jpg") no-repeat center/cover;
+  color: white;
+  box-sizing: border-box;
+
+  & .button {
+    margin-top: 20px;
+  }
+}

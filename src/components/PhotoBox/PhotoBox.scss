@@ -1,0 +1,56 @@
+.photoBox {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &.menu {
+    & .photoBoxAvatar {
+      width: 100px;
+      height: 100px;
+    }
+
+    & .photoBoxName {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .photoBoxAvatar {
+        height: 40px;
+        width: 40px;
+        margin-bottom: 120px;
+      }
+
+      .photoBoxName {
+        display: none;
+      }
+    }
+  }
+
+  .photoBoxAvatar {
+    width: 163px;
+    height: 163px;
+    border-radius: 50%;
+    border: 1px solid #FFF;
+  }
+
+  .photoBoxName {
+    margin: 0;
+  }
+
+  .photoBoxDescription {
+    max-width: 500px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}

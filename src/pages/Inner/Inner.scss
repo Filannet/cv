@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+
+  .innerContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 36px;
+    margin-left: 255px;
+  }
+
+  @media (max-width: 600px) {
+    .innerContent {
+      margin-left: 60px;
+    }
+
+    .panelWrapper {
+      grid-template-columns: 54px 30px;
+    }
+
+    & .navigationText {
+      display: none;
+    }
+
+  }
+
+  &.collapsed {
+
+    .panelWrapper {
+      grid-template-columns: 0 30px;
+    }
+
+    .panelColumn:first-child {
+      display: none;
+    }
+
+    .innerContent {
+      margin-left: 5px;
+    }
+  }
+}
